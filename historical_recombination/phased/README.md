@@ -1,3 +1,6 @@
+01/2021 mmjohn updated to use python 3
+===================
+
 Performs the training and testing of a CNN to predict rho on an phased haploid chromosomes. 
 Requires installation of keras, tensorflow, numpy, scikit-learn, matplotlib.
 
