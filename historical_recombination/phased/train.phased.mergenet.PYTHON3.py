@@ -14,7 +14,7 @@ def rmse(x,y):
     return np.sqrt(np.mean((x-y)**2))
 
 #load and prep data
-a = np.load('../dataset/ld.data.npz' , encoding='latin1')
+a = np.load('/stor/work/Wilke/mmj2238/ld.data.npz' , encoding='latin1')
 
 postrain, ytest, ytrain, xtest, xtrain, postest = [a[i] for i in ['postrain', 'ytest', 'ytrain', 'xtest', 'xtrain', 'postest']]
 
