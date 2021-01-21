@@ -1,5 +1,7 @@
 import numpy as np
-import keras
+#import keras
+import tensorflow
+from tensorflow import keras
 from keras.models import Sequential
 from keras.layers import Dense, Dropout, Flatten, Merge
 from keras.layers import Conv1D, MaxPooling1D, AveragePooling1D
@@ -7,6 +9,18 @@ from keras import backend as K
 from random import shuffle, choice
 from keras.preprocessing import sequence
 from matplotlib import pyplot as plt
+
+#Traceback (most recent call last):
+#  File "/stor/home/mmj2238/.local/lib/python3.6/site-packages/keras/__init__.py", line 3, in <module>
+#    from tensorflow.keras.layers.experimental.preprocessing import RandomRotation
+#ModuleNotFoundError: No module named 'tensorflow.keras.layers.experimental.preprocessing'
+#During handling of the above exception, another exception occurred:
+#Traceback (most recent call last):
+#  File "train.phased.mergenet.PYTHON3.py", line 2, in <module>
+#    import keras
+#  File "/stor/home/mmj2238/.local/lib/python3.6/site-packages/keras/__init__.py", line 6, in <module>
+#    'Keras requires TensorFlow 2.2 or higher. '
+#ImportError: Keras requires TensorFlow 2.2 or higher. Install TensorFlow via `pip install tensorflow`
 
 def rsquare(x,y):
     return np.corrcoef(x,y)[0][1]**2  #r-squared
